@@ -38,6 +38,6 @@ if($status === false){
     exit('ErrorMessage:'.$error[2]);
   }else{
     //５．index.phpへリダイレクト
-    header('Location: index.php');
+    header('Location: /gs_code/02_homework/php-js-python/index.php');
   }
 ?>

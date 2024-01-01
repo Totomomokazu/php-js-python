@@ -59,7 +59,7 @@ if ($status==false) {
     <title>アンケート結果の表示</title>
 </head>
 <body>
-    <button><a href="index.php">入力画面を確認する</a></button>
+    <button><a href="/gs_code/02_homework/php-js-python/index.php">入力画面を確認する</a></button>
     <!-- データ表示エリア -->
     <div>
         <div class="container jumbotron"><?= $view ?></div>

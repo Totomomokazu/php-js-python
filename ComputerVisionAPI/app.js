@@ -3,6 +3,7 @@ $(document).ready(function() {
         e.preventDefault();
         var formData = new FormData();
         formData.append('image', $('#image-input')[0].files[0]);
+        
 
         $.ajax({
             url: 'app.php',

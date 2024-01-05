@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>物体検知アプリ</title>
+</head>
+<body>
+
+    <div class="wrap">
+        <!-- 投稿エリア -->
+        <div class="upload">
+            <h4>post画面</h4>
+            
+            <form id="upload-form">
+                <input type="file" id="fileInput" hidden/>
+                <div id="droparea">ここに画像をドラッグ＆ドロップ</div>
+                <div id="post_btn">
+                    <input type="submit" id="post_btn" value="送信"></input>
+                </div>
+            </form>
+
+            <div class="preview">
+                <img id="preview" style="max-width: 300px;">
+            </div>
+
+        </div>
+
+
+        <!-- postした画像の表示エリア -->
+        <div class="post">
+            <div id="post_field"></div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- ここから下はjQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- ここから下がjs -->
+    <script src="app.js"></script>
+</body>
+</html>

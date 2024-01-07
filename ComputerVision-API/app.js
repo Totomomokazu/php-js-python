@@ -26,6 +26,7 @@ function filehandle(file){ //fileを引数としている
         //show()でpreview領域がdisplay:noneであっても表示できる
         filedata=e.target.result //読み込んだファイルデータをfileDataという変数で保存
         console.log("ファイルの一時保存")
+        console.log(filedata)
     };
 }
 
@@ -40,40 +41,18 @@ $("#droparea").on("drop",function(e){ //dropareaで"drop"イベントが発生�
     console.log(files)
     if(files.length>0){ //fileが1つ以上あるかチェック
         filehandle(files[0]); //filehandle関数を実行する。引数にfiles[0]を代入
+
     }
 
 });
 
 
-    
 //postボタンを押されたときの処理
 $("#post_btn").on("click",function(){
-    if(filedata){
-        let obj ={} //画像を格納する用のobjectを作成
-        console.log("postボタン押下後に成功")
-
-        obj={
-            img:filedata,
-        }
-        console.log("objへの代入に成功")
-
-
-        // ここでローカルストレージに画像を保存しているが、phpでDBに保存すればよいのではないか？
-        localStorage.setItem(count.toString(),JSON.stringify(obj));
-        console.log("localstrageへの保存に成功")
-
-        const json_obj=JSON.parse(localStorage.getItem(count.toString()))
-        const html=`
-            <div class="post_details">
-                <img src="${json_obj.img}" alt="投稿画像"></img>
-                <p>${json_obj.comment}</p>
-                <div class="like_button">
-                    <button id="like_button${count}" class="${count}">♥ いいね</button>
-                    <span class="like_count">0</span>
-                </div>
-            </div>`
-            $("#post_field").append(html)
-    }else{
-        alert("画像を選択してください。")
+    // ここにphpファイルにデータを送信する方法を書く
+    // データを変数で定義
+    let data ={
+        img :filedata
     }
+    console.log(data)
 })

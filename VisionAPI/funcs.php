@@ -10,7 +10,7 @@ function h($str)
 function db_conn()
 {
     try {
-        $db_name = 'gs_db5';    //データベース名
+        $db_name = 'gs_db_visionapi';    //データベース名
         $db_id   = 'root';      //アカウント名
         $db_pw   = '';      //パスワード：XAMPPはパスワード無しに修正してください。
         $db_host = 'localhost'; //DBホスト

@@ -49,7 +49,7 @@ if ($status == false) {
                 ?>
       
                 <div>
-                    <input type="submit" value="更新">
+                    <input type="submit" value="画像解析">
                     <input type="hidden" name="id" value="<?= $id ?>">
             </fieldset>
         </div>

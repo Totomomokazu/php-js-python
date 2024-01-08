@@ -2,7 +2,7 @@
 // PHPスクリプトの開始を宣言
 
 // 画像ファイルのパスを変数に代入
-$imagePath = 'image.jpg';
+$imagePath = 'sample1.png';
 
 // Pythonスクリプトを実行し、その結果を変数に代入
 // "python"はPythonスクリプトを実行するコマンド
@@ -12,4 +12,6 @@ $result = shell_exec("python test-visionapi.py " . escapeshellarg($imagePath));
 
 // Pythonスクリプトの実行結果を出力
 echo $result;
+echo "<br>";
+echo "test";
 ?>

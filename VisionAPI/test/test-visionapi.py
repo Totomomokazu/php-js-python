@@ -27,7 +27,10 @@ if __name__ == "__main__":
     print(json.dumps(tags))
 
 
-processed_image = some_image_processing_library.process_image(image_path)
+# processed_image = some_image_processing_library.process_image(image_path)
 
 # 結果を出力
-print("Processed Image:", processed_image)
+# print("Processed Image:", processed_image)
+
+
+print(image_path)

@@ -9,8 +9,8 @@ import sys
 # コマンドライン引数から画像ファイルのパスを取得
 
 # 画像処理
-subscription_key = "xx"
-endpoint = "xx"
+subscription_key = "xxx"
+endpoint = "xxx"
 computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredentials(subscription_key))
 
 

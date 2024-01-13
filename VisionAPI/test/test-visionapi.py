@@ -15,6 +15,7 @@ computervision_client = ComputerVisionClient(endpoint, CognitiveServicesCredenti
 
 
 # 物体のタグ（名前）を取得する関数
+
 def get_tags(filepath):
     local_image = open(filepath, "rb")
 
